@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Produto from './Produto.js';
+import Greeting from './Gretting';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Bem-vindo ao React</h1>
+      <Greeting nome="Anderson" />
+      <Greeting nome="João" />
+      <Greeting nome="Maria" />
+      <Produto  nome="Notebook" preco= {1800} />
+      <Produto  nome="Tablet" preco= {500} />
+      <Produto  nome="Pc" preco= {5200} />
+    
     </div>
   );
 }
